@@ -110,8 +110,8 @@ def squareprism(request):
         print('request=',request)
         print('Base=',b)
         print('Height=',h)
-        area = int(b) * int(h)
-        context['area'] = area
+        area = 2*(int(b)^2)+4*int(b)*int(h)
+        context['area'] = areapython manage.py
         context['b'] = b
         context['h'] = h
         print('Area=',area)
@@ -127,14 +127,12 @@ urlpatterns = [
     path('',views.squareprism,name="areaofsquareprismroot")
 ]
 ```
-
-
-## SERVER SIDE PROCESSING:
-![Alt text](<Screenshot (42).png>)
+ ## SERVER SIDE PROCESSING:
+![Alt text](<aksh/mathapp/migrations/Screenshot (45).png>)
 
 
 ## HOMEPAGE:
-![Alt text](<Screenshot (41).png>)
+![Alt text](<Screenshot (43).png>)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
